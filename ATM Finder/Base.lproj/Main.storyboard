@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JS6-gV-h6E">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main Menu Table View Controller-->
+        <scene sceneID="k4m-wa-Xel">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="7lm-q3-B13" customClass="MainMenuTableViewController" customModule="ATM_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iQu-Yk-85K"/>
+                    <connections>
+                        <segue destination="u3c-FO-ehD" kind="showDetail" identifier="showSettings" id="gVw-tJ-S2U"/>
+                        <segue destination="2oi-iq-w4X" kind="showDetail" identifier="showMap" id="mbB-Vs-tV6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asn-ce-i91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="140"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="1Cc-W7-edI">
+            <objects>
+                <viewController id="u3c-FO-ehD" customClass="SettingsViewController" customModule="ATM_Finder" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOh-da-O6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="1195"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="cPS-7G-g1e">
+            <objects>
+                <viewController id="2oi-iq-w4X" customClass="MapViewController" customModule="ATM_Finder" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQ9-Fx-XHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1643" y="1233"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yii-TW-x3B">
+            <objects>
+                <navigationController id="gO4-nf-1jE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sac-K3-9Fv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7lm-q3-B13" kind="relationship" relationship="rootViewController" id="RAn-Eb-zuS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdP-fI-0io" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="140"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="7mD-gr-ojr">
+            <objects>
+                <splitViewController id="JS6-gV-h6E" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="gO4-nf-1jE" kind="relationship" relationship="masterViewController" id="X43-5y-gf3"/>
+                        <segue destination="u3c-FO-ehD" kind="relationship" relationship="detailViewController" id="ekb-Kb-oli"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kk5-WT-Vws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-418" y="471"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ekb-Kb-oli"/>
+    </inferredMetricsTieBreakers>
+</document>
