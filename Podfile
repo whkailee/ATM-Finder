@@ -3,7 +3,5 @@ platform :ios, '7.0'
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-target 'ATM Finder' do
 pod "CCHMapClusterController"
-end
 

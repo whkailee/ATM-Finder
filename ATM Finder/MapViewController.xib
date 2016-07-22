@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="ATM_Finder" customModuleProvider="target">
             <connections>
+                <outlet property="mapView" destination="vxO-0L-AoZ" id="IoQ-cJ-4EL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,18 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vxO-0L-AoZ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </mapView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vxO-0L-AoZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0bF-So-SzK"/>
+                <constraint firstItem="vxO-0L-AoZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NwB-nJ-2ci"/>
+                <constraint firstItem="vxO-0L-AoZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="aJG-M8-Ar8"/>
+                <constraint firstItem="vxO-0L-AoZ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="vr6-VF-0ub"/>
+            </constraints>
         </view>
     </objects>
 </document>

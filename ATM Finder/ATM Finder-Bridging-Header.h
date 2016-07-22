@@ -3,3 +3,7 @@
 //
 
 #import "BaseModel.h"
+
+#import "CCHMapClusterController.h"
+#import "CCHMapClusterAnnotation.h"
+#import "ClusterAnnotationView.h"
