@@ -24,6 +24,8 @@ class MainMenuTableViewController: UITableViewController {
         menus.append("Map")
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        
+        self.view.backgroundColor = UIColor.blackColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,8 +48,16 @@ class MainMenuTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        
+        cell.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
 
         cell.textLabel?.text = menus[indexPath.row]
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.backgroundColor = UIColor(white: 0.1, alpha: 0.4)
+        
+        cell.selectedBackgroundView = selectedBackgroundView
 
         return cell
     }

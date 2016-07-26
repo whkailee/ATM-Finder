@@ -75,12 +75,12 @@
         NSString *imageName = nil;
         if (self.isAtm)
         {
-            imageName = @"atm-pin";
+            imageName = @"atm_pin";
             centerOffset = CGPointMake(14, -13.25);
         }
         else
         {
-            imageName = @"branch-pin";
+            imageName = @"branch_pin";
             centerOffset = CGPointMake(0, -19.5);
         }
         image = [UIImage imageNamed:imageName];

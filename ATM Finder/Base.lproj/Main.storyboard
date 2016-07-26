@@ -39,7 +39,8 @@
         <scene sceneID="Yii-TW-x3B">
             <objects>
                 <navigationController id="gO4-nf-1jE" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sac-K3-9Fv">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="sac-K3-9Fv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -68,4 +69,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="ekb-Kb-oli"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.99215686270000003" green="0.71764705880000002" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

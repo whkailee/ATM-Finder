@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: BaseViewController {
     
     private var cachedLocations = Array<Location>();
     private var mapClusterController : CCHMapClusterController?
